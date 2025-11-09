@@ -23,6 +23,7 @@ public class GestorBBDD {
             }
 
             PreparedStatement ps = conn.prepareStatement(sql);
+
             ps.setInt(1, j.getID_Game());
             ps.setString(2, j.getTitle());
             ps.setString(3, j.getDeveloper());
